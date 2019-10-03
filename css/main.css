@@ -1,57 +1,103 @@
 body {
-  font-family: monospace;
-  font-size: 20px;
-  text-align: center;
-  background: black;
-  color: lime;
-  margin: 3em;
+	color:lime;
+	margin:3em;
+	font-size:20px;
+	background:black;
+	text-align:center;
+	font-family:monospace;
 }
 
 strong {
-  text-decoration: underline;
+	text-decoration:underline;
 }
 
 button {
-  background: lime;
-  color: black;
-  border: none;
-  padding: 10px 15px;
-  font-size: 1.2em;
-  font-family: monospace;
-  font-weight: bold;
+	color:black;
+	border:none;
+	cursor:pointer;
+	background:lime;
+	font-size:1.2em;
+	font-weight:bold;
+	padding:10px 15px;
+	border-radius:5px;
+	font-family:monospace;
+	transition:all 0.3s ease;
+	-o-transition:all 0.3s ease;
+	-ms-transition:all 0.3s ease;
+	-moz-transition:all 0.3s ease;
+	-webkit-transition:all 0.3s ease;
 }
-button:active {
-  background: green;
+
+button:hover {
+	opacity:0.75;
+}
+
+button:active,
+button:focus {
+	border:none;
+	outline:none;
+	background:green;
+}
+
+button:disabled {
+	opacity:0.25;
+	cursor:default;
+}
+
+#reset {
+	display:block;
+	font-size:15px;
+	margin:100px auto 0;
+	color:#FFF !important;
+	text-transform:lowercase;
+	background:#AB0534 !important;
 }
 
 .container {
-  width: 960px;
-  margin: 0 auto;
+	width:960px;
+	margin:0 auto;
 }
 
 .scoreboard {
-  width: 14em;
-  margin: auto;
-  border: 1px solid lime;
+	width:14em;
+	margin:auto;
+	border:1px solid lime;
 }
+
 .scoreboard h2 {
-  border-bottom: 1px solid lime;
-  margin: 0;
-  padding: 10px;
+	margin:0;
+	padding:10px;
+	border-bottom:1px solid lime;
 }
+
 .scoreboard table {
-  margin: 10px auto;
-  width: 100%;
-  border-collapse: collapse;
+	width:100%;
+	margin:10px auto;
+	border-collapse:collapse;
 }
+
 .scoreboard th, .scoreboard td {
-  text-align: center;
+	text-align:center;
 }
+
 .scoreboard td {
-  font-size: 3em;
-  padding: 0 20px;
+	font-size:3em;
+	padding:0 20px;
 }
 
 #status {
-  margin-top: 20px;
+	margin-top:20px;
 }
+
+#wise-message {
+	text-decoration:underline;
+}
+
+.winner {
+	padding:15px;
+	display:table;
+	margin:25px auto;
+	border:2px solid #FFF;
+	text-decoration:none !important;
+}
+
