@@ -1,49 +1,47 @@
 <!DOCTYPE html>
 <html>
-  <head>
-  	<meta charset="UTF-8">
-  	<title>Parchment, Stone, or Blade?</title>
-  	<link rel="stylesheet" href="css/main.css">
-  </head>
+<head>
+<meta charset="UTF-8">
+<title>Parchment, Stone, or Blade?</title>
+<link rel="stylesheet" href="css/main.css">
+</head>
 
-  <body>
-    <div class="container">
-      <h1>Rock, Paper, or Scissors?</h1>
+	<body>
+	<div class="container">
+		<h1>Rock, Paper, or Scissors?</h1>
+		<p>
+		A steam-powered bot has challenged you to a game. <strong>Rock</strong> beats <strong>scissors</strong>, <strong>scissors</strong> beats <strong>paper</strong>, and <strong>paper</strong> beats <strong>rock</strong>.
+		</p>
 
-      <p>
-        A steam-powered bot has challenged you to a game. <strong>Rock</strong> beats <strong>scissors</strong>, <strong>scissors</strong> beats <strong>paper</strong>, and <strong>paper</strong> beats <strong>rock</strong>.
-      </p>
+		<div class="scoreboard">
+			<h2>Scoreboard</h2>
+			<table>
+				<tbody>
+					<tr>
+						<td id="humanScore">0</td>
+						<td id="computerScore">0</td>
+					</tr>
+				</tbody>
+				<tfoot>
+					<tr>
+						<th>You</th>
+						<th>Bot</th>
+					</tr>
+				</tfoot>
+			</table>
+		</div>
 
-      <div class="scoreboard">
-        <h2>Scoreboard</h2>
-        <table>
-          <tbody>
-            <tr>
-              <td id="humanScore">0</td>
-              <td id="computerScore">0</td>
-            </tr>
-          </tbody>
-          <tfoot>
-            <tr>
-              <th>You</th>
-              <th>Bot</th>
-            </tr>
-          </tfoot>
-        </table>
-      </div>
+		<h2 id="wise-message">Choose Wisely</h2>
+		<p id="bonus-message"></p>
+		<button id="rock">Rock</button>
+		<button id="paper">Paper</button>
+		<button id="scissors">Scissors</button>
+		<div id="status"></div>
 
-      <h2>Choose Wisely</h2>
+		<button id="reset">Reset Game</button>
+	</div>
 
-      <button id="rock">Rock</button>
-
-      <button id="paper">Paper</button>
-
-      <button id="scissors">Scissors</button>
-
-      <div id="status"></div>
-    </div>
-
-    <script src="js/jquery-2.1.4.js"></script>
-    <script src="js/main.js"></script>
-  </body>
+<script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+<script src="js/main.js"></script>
+</body>
 </html>
