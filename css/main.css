@@ -55,3 +55,45 @@ button:active {
 #status {
   margin-top: 20px;
 }
+
+#statusRound {
+  margin-top: 20px;
+  color: blue;
+}
+
+#statusGame {
+  margin-top: 20px;
+  color: red;
+}
+
+
+.scoreboardround {
+  width: 14em;
+  margin: auto;
+  color: blue;
+  border: 1px solid blue;
+}
+.scoreboardround h2 {
+  border-bottom: 1px solid blue;
+  margin: 0;
+  padding: 10px;
+}
+.scoreboardround table {
+  margin: 10px auto;
+  width: 100%;
+  border-collapse: collapse;
+}
+.scoreboardround th, .scoreboard td {
+  text-align: center;
+}
+.scoreboardround td {
+  font-size: 3em;
+  padding: 0 20px;
+}
+
+.reloadgame {
+  color:red;
+}
+.statusgame {
+  color:red;
+}
