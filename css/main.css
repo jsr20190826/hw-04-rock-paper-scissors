@@ -52,6 +52,6 @@ button:active {
   padding: 0 20px;
 }
 
-#status {
+#status, #winner {
   margin-top: 20px;
 }
