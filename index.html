@@ -12,6 +12,7 @@
 
       <p>
         A steam-powered bot has challenged you to a game. <strong>Rock</strong> beats <strong>scissors</strong>, <strong>scissors</strong> beats <strong>paper</strong>, and <strong>paper</strong> beats <strong>rock</strong>.
+        First player to win two rounds wins!
       </p>
 
       <div class="scoreboard">
@@ -30,20 +31,32 @@
             </tr>
           </tfoot>
         </table>
+        <p id="bonus"></p>
       </div>
 
       <h2>Choose Wisely</h2>
+      <div class="playButtons">
+        <button id="rock">Rock</button>
 
-      <button id="rock">Rock</button>
+        <button id="paper">Paper</button>
 
-      <button id="paper">Paper</button>
+        <button id="scissors">Scissors</button>
+      </div>
 
-      <button id="scissors">Scissors</button>
+      <div class="restartButton">
+        <button id="restart">New Game?</button>
+      </div>
 
-      <div id="status"></div>
+      <div id="status">
+        <p>You played <b id="playerChoice">nothing</b>. The bot played <b id="botChoice">nothing</b>.</p>
+        <p id="showWinner">Who will win? :)</p>
+        <p id="roundTracking">
+        </p>
+
+      </div>
     </div>
 
-    <script src="js/jquery-2.1.4.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script src="js/main.js"></script>
   </body>
 </html>
