@@ -56,10 +56,6 @@ button:active {
   margin-top: 20px;
 }
 
-.reveal {
-  visibility: inline;
-}
-
 .restartButton {
   display: none;
 }
